@@ -51,6 +51,7 @@ int		ft_isascii(int c);
 int		ft_isprint(int c);
 int		ft_toupper(int c);
 int		ft_tolower(int c);
+int		min(int a, int b);
 int		max(int a, int b);
 int		valid_flag(char c);
 int		gnl_strlen(char *s);
@@ -97,6 +98,9 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+
+float	minf(float a, float b);
+float	maxf(float a, float b);
 
 size_t	ft_intlen(int d);
 size_t	x_len(unsigned int nb);

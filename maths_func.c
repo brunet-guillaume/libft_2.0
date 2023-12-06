@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   helper.c                                           :+:      :+:    :+:   */
+/*   maths_func.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -12,50 +12,30 @@
 
 #include "libft.h"
 
-void	print_d_num(int nb)
+float	minf(float a, float b)
 {
-	long	nbr;
-
-	nbr = nb;
-	if (nb < 0)
-		nbr = -nbr;
-	if (nbr >= 10)
-	{
-		print_d_num(nbr / 10);
-		print_d_num(nbr % 10);
-	}
-	if (nbr < 10)
-		ft_putchar_fd('0' + nbr, 1);
+	if (a < b)
+		return (a);
+	return (b);
 }
 
-size_t	ft_unsigned_intlen(unsigned int u)
+float	maxf(float a, float b)
 {
-	size_t	len;
-
-	len = 0;
-	while (u / 10 != 0)
-	{
-		u /= 10;
-		len++;
-	}
-	return (len + 1);
+	if (a > b)
+		return (a);
+	return (b);
 }
 
-size_t	ft_intlen(int d)
+int	min(int a, int b)
 {
-	size_t	len;
-
-	len = 0;
-	while (d / 10 != 0)
-	{
-		d /= 10;
-		len++;
-	}
-	return (len + 1);
+	if (a < b)
+		return (a);
+	return (b);
 }
 
-void	print_c_i(char c, int i)
+int	max(int a, int b)
 {
-	while (i-- > 0)
-		ft_putchar_fd(c, 1);
+	if (b > a)
+		return (b);
+	return (a);
 }
