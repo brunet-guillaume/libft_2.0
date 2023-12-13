@@ -14,9 +14,11 @@ SOURCES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_lstnew.c ft_lstadd_front.c ft_lstsize.c \
 		ft_lstlast.c ft_lstadd_back.c ft_lstdelone.c \
 		ft_lstclear.c ft_lstiter.c ft_lstmap.c \
-		ft_printf.c options.c percent_parcer.c print_c.c print_s.c print_p.c print_d.c \
-		print_u.c print_x.c print_x_helper.c helper.c print_d_helper.c print_u_helper.c \
-		get_next_line.c get_next_line_utils.c maths_func.c
+		ft_printf.c options.c percent_parcer.c print_c.c print_s.c print_p.c \
+		print_d.c print_u.c print_x.c print_x_helper.c helper.c \
+		print_d_helper.c print_u_helper.c get_next_line.c \
+		get_next_line_utils.c maths_func.c ft_dl_new.c ft_dl_add_front.c \
+		ft_dl_add_back.c ft_dl_del.c ft_dl_clear.c ft_dl_new.c
 
 ALLSRCS = $(SOURCES) $(BONUS)
 
