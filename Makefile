@@ -18,7 +18,7 @@ SOURCES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		print_d.c print_u.c print_x.c print_x_helper.c helper.c \
 		print_d_helper.c print_u_helper.c get_next_line.c \
 		get_next_line_utils.c maths_func.c ft_dl_new.c ft_dl_add_front.c \
-		ft_dl_add_back.c ft_dl_del.c ft_dl_clear.c ft_dl_new.c
+		ft_dl_add_back.c ft_dl_del.c ft_dl_clear.c ft_dl_new.c ft_dl_last.c
 
 ALLSRCS = $(SOURCES) $(BONUS)
 
