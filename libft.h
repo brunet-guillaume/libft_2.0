@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2023/12/13 16:25:23 by gbrunet          ###   ########.fr       */
+/*   Updated: 2023/12/20 00:37:38 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,7 @@ int		max(int a, int b);
 int		valid_flag(char c);
 int		gnl_strlen(char *s);
 int		ft_lstsize(t_list *lst);
+int		ft_dl_size(t_dlist *list);
 int		ft_atoi(const char *nptr);
 int		get_endl_pos(char *prev_line);
 int		ft_printf(const char *s, ...);
@@ -92,6 +93,7 @@ void	ft_putendl_fd(char *s, int fd);
 void	set_type(t_opt *options, char c);
 void	set_flags(t_opt *options, char c);
 void	print_int_sign(t_opt opts, int d);
+void	ft_dl_swap(t_dlist *a, t_dlist *b);
 void	*join_str(char *p_line, char *buf);
 void	*ft_memset(void *s, int c, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
@@ -108,6 +110,7 @@ void	ft_dl_clear(t_dlist **lst, void (*del)(void *));
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+void	ft_dl_sort(t_dlist *list, int (*sort_cmp)(void *, void *));
 
 float	minf(float a, float b);
 float	maxf(float a, float b);
