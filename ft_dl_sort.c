@@ -6,7 +6,7 @@
 /*   By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 00:25:14 by gbrunet           #+#    #+#             */
-/*   Updated: 2023/12/20 00:47:06 by gbrunet          ###   ########.fr       */
+/*   Updated: 2023/12/20 00:52:14 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,8 +57,8 @@ void	dl_quicksrt(t_dlist *lst, int low, int high, int (*cmp)(void *, void *))
 	if (low < high)
 	{
 		pivot = dl_partition(lst, low, high, cmp);
-		dl_quicksort(lst, low, pivot - 1, cmp);
-		dl_quicksort(lst, pivot + 1, high, cmp);
+		dl_quicksrt(lst, low, pivot - 1, cmp);
+		dl_quicksrt(lst, pivot + 1, high, cmp);
 	}
 }
 
