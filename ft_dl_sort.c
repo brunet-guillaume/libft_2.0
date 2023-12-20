@@ -6,7 +6,7 @@
 /*   By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/20 00:25:14 by gbrunet           #+#    #+#             */
-/*   Updated: 2023/12/20 00:52:14 by gbrunet          ###   ########.fr       */
+/*   Updated: 2023/12/20 01:00:54 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,5 @@ void	dl_quicksrt(t_dlist *lst, int low, int high, int (*cmp)(void *, void *))
 
 void	ft_dl_sort(t_dlist *list, int (*sort_cmp)(void *, void *))
 {
-	dl_quicksort(list, 0, ft_dl_size(list) - 1, sort_cmp);
+	dl_quicksrt(list, 0, ft_dl_size(list) - 1, sort_cmp);
 }
