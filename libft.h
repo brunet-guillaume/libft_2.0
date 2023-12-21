@@ -150,5 +150,5 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 
 t_dlist	*ft_dl_new(void *data);
 t_dlist	*ft_dl_last(t_dlist *lst);
-
+t_dlist	*ft_dl_remove_from(t_dlist **lst, t_dlist *elem, void (*del)(void *));
 #endif
