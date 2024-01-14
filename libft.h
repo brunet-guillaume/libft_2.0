@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2023/12/20 00:37:38 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/01/14 14:35:23 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,7 +24,8 @@
 # include <stdarg.h>
 # include <stdlib.h>
 
-typedef struct s_opt {
+typedef struct s_opt
+{
 	int		minus;
 	int		zero;
 	int		dot;
