@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/01/14 14:35:23 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/01/16 10:11:30 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,6 +60,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		min(int a, int b);
 int		max(int a, int b);
+int		ft_isspace(char c);
 int		valid_flag(char c);
 int		gnl_strlen(char *s);
 int		ft_lstsize(t_list *lst);
@@ -73,6 +74,7 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_itoa(int n);
 char	*get_next_line(int fd);
 char	*ft_strdup(const char *s);
+char	**ft_space_split(char const *s);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
 char	**ft_split(char const *s, char c);
