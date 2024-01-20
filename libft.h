@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/01/20 11:38:08 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/01/20 21:44:32 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -68,7 +68,7 @@ int		ft_dl_size(t_dlist *list);
 int		ft_atoi(const char *nptr);
 int		get_endl_pos(char *prev_line);
 int		ft_printf(const char *s, ...);
-int		ft_free(int return_val, int nb_free, ...);
+int		ft_free(int return_val, char *str, ...);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 
