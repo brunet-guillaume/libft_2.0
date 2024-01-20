@@ -6,7 +6,7 @@
 /*   By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/01/20 11:36:35 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/01/20 21:44:02 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/01/20 21:47:32 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,14 +29,14 @@ int	ft_free(int return_val, char *str, ...)
 			ptr = va_arg(ap, void *);
 			free(ptr);
 		}
-		else if (styr[i] == 's')
+		else if (str[i] == 's')
 		{
 			split = va_arg(ap, char **);
 			j = -1;
-			while (split[++i])
-				free (split[i]);
+			while (split[++j])
+				free (split[j]);
 			free (split);
 		}
 	}
-	return (return_value);
+	return (return_val);
 }
