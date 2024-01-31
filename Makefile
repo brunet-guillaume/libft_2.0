@@ -6,7 +6,7 @@
 #    By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/20 10:00:18 by gbrunet           #+#    #+#              #
-#    Updated: 2024/01/20 11:37:25 by gbrunet          ###   ########.fr        #
+#    Updated: 2024/01/31 17:11:28 by gbrunet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -49,22 +49,36 @@ OBJECTS = $(SOURCES:.c=.o)
 
 ALLOBJS = $(ALLSRCS:.c=.o)
 
+COMPTEUR = 0
+
 %.o : %.c
-	@echo "$(_CYAN)$< => $@ $(_END)"
+	$(eval COMPTEUR=$(shell echo $$(($(COMPTEUR)+1))))
+	@printf "\e[?25l"
+	@if test $(COMPTEUR) -eq 1;then \
+		printf "$(_YELLOW)Compiling $(NAME) binary files...$(_END)\n\n";fi
+	@printf "\033[A\33[2K\r$(_CYAN)Binary $(COMPTEUR): $@$(_END)\n"
 	@$(CC) -c $(CFLAGS) $< -o $@ -I ./
 
 .PHONY : all clean fclean re bonus
 
 $(NAME) : $(OBJECTS)
 	@ar rc $(NAME) $(OBJECTS)
+	@echo "$(_GREEN)Libft created$(_END)"
+	@printf "\e[?25h"
 
 all : $(NAME)
 
 clean :
+	@echo "$(_YELLOW)$(NAME): Clean...$(_END)"
 	@$(RM) $(ALLOBJS)
+	@echo "$(_GREEN)$(NAME): Binaries deleted...$(_END)"
 
-fclean : clean
+fclean :
+	@echo "$(_YELLOW)$(NAME): Full clean...$(_END)"
+	@$(RM) $(ALLOBJS)
+	@echo "$(_GREEN)$(NAME): Binaries deleted...$(_END)"
 	@$(RM) $(NAME)
+	@echo "$(_GREEN)$(NAME) deleted...$(_END)"
 
 re : fclean all
 
