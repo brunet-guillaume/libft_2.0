@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/01/20 21:44:32 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/02/22 15:55:25 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,15 @@
 # include <unistd.h>
 # include <stdarg.h>
 # include <stdlib.h>
+
+typedef struct s_clr
+{
+	int		r;
+	int		g;
+	int		b;
+	int		a;
+	int		rgba;
+}	t_clr;
 
 typedef struct s_opt
 {
@@ -60,6 +69,7 @@ int		ft_toupper(int c);
 int		ft_tolower(int c);
 int		min(int a, int b);
 int		max(int a, int b);
+int		clamp(int nb, int a, int b);
 int		ft_isspace(char c);
 int		valid_flag(char c);
 int		gnl_strlen(char *s);
@@ -118,6 +128,7 @@ void	ft_dl_sort(t_dlist *list, int (*sort_cmp)(void *, void *));
 
 float	minf(float a, float b);
 float	maxf(float a, float b);
+float	clampf(float nb, float a, float b);
 
 size_t	ft_intlen(int d);
 size_t	x_len(unsigned int nb);
@@ -155,4 +166,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_dlist	*ft_dl_new(void *data);
 t_dlist	*ft_dl_last(t_dlist *lst);
 t_dlist	*ft_dl_remove_from(t_dlist **lst, t_dlist *elem, void (*del)(void *));
+
+t_clr	rgba_from_int(int clr);
+t_clr	rgba(int r, int g, int b, int a);
 #endif

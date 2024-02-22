@@ -6,7 +6,7 @@
 #    By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/20 10:00:18 by gbrunet           #+#    #+#              #
-#    Updated: 2024/01/31 17:11:28 by gbrunet          ###   ########.fr        #
+#    Updated: 2024/02/22 15:45:49 by gbrunet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -39,9 +39,10 @@ SOURCES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_printf.c options.c percent_parcer.c print_c.c print_s.c print_p.c \
 		print_d.c print_u.c print_x.c print_x_helper.c helper.c \
 		print_d_helper.c print_u_helper.c get_next_line.c \
-		get_next_line_utils.c maths_func.c ft_dl_new.c ft_dl_add_front.c \
+		get_next_line_utils.c mathf_func.c ft_dl_new.c ft_dl_add_front.c \
 		ft_dl_add_back.c ft_dl_del.c ft_dl_clear.c ft_dl_new.c ft_dl_last.c \
-		ft_dl_size.c ft_dl_sort.c ft_dl_swap.c ft_dl_remove_from.c
+		ft_dl_size.c ft_dl_sort.c ft_dl_swap.c ft_dl_remove_from.c \
+		mathi_func.c ft_rgba.c
 
 ALLSRCS = $(SOURCES) $(BONUS)
 
