@@ -6,7 +6,7 @@
 #    By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/20 10:00:18 by gbrunet           #+#    #+#              #
-#    Updated: 2024/02/22 15:45:49 by gbrunet          ###   ########.fr        #
+#    Updated: 2024/02/24 15:34:59 by gbrunet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -64,7 +64,7 @@ COMPTEUR = 0
 
 $(NAME) : $(OBJECTS)
 	@ar rc $(NAME) $(OBJECTS)
-	@echo "$(_GREEN)Libft created$(_END)"
+	@echo "$(_GREEN)Libft created.$(_END)"
 	@printf "\e[?25h"
 
 all : $(NAME)
@@ -72,14 +72,14 @@ all : $(NAME)
 clean :
 	@echo "$(_YELLOW)$(NAME): Clean...$(_END)"
 	@$(RM) $(ALLOBJS)
-	@echo "$(_GREEN)$(NAME): Binaries deleted...$(_END)"
+	@echo "$(_GREEN)$(NAME): Binaries deleted.$(_END)"
 
 fclean :
 	@echo "$(_YELLOW)$(NAME): Full clean...$(_END)"
 	@$(RM) $(ALLOBJS)
-	@echo "$(_GREEN)$(NAME): Binaries deleted...$(_END)"
+	@echo "$(_GREEN)$(NAME): Binaries deleted.$(_END)"
 	@$(RM) $(NAME)
-	@echo "$(_GREEN)$(NAME) deleted...$(_END)"
+	@echo "$(_GREEN)$(NAME) deleted.$(_END)"
 
 re : fclean all
 
