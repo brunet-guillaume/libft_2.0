@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   maths_func.c                                       :+:      :+:    :+:   */
+/*   mathf_func.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/12 10:08:56 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/02/22 15:44:09 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/02/26 09:48:33 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ float	maxf(float a, float b)
 float	clampf(float nb, float a, float b)
 {
 	if (a < b)
-		return (max(min(b, nb), a));
+		return (maxf(minf(b, nb), a));
 	else
-		return (max(min(a, nb), b));
+		return (maxf(minf(a, nb), b));
 }
