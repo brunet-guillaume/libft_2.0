@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/02/29 10:28:13 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/02/29 10:35:27 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -78,7 +78,6 @@ int		ft_atoi(const char *nptr);
 int		clamp(int nb, int a, int b);
 int		get_endl_pos(char *prev_line);
 int		ft_printf(const char *s, ...);
-int		ft_malloc(void *obj, size_t size);
 int		ft_free(int return_val, char *str, ...);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);

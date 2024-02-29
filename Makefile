@@ -6,7 +6,7 @@
 #    By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/20 10:00:18 by gbrunet           #+#    #+#              #
-#    Updated: 2024/02/29 10:29:29 by gbrunet          ###   ########.fr        #
+#    Updated: 2024/02/29 10:35:19 by gbrunet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -26,7 +26,7 @@ CFLAGS = -Wall -Wextra -Werror
 
 SOURCES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_isascii.c ft_isdigit.c ft_isprint.c ft_itoa.c ft_memchr.c \
-		ft_isspace.c ft_malloc.c \
+		ft_isspace.c \
 		ft_memcmp.c ft_memcpy.c ft_memmove.c ft_memset.c ft_putchar_fd.c \
 		ft_putendl_fd.c ft_putnbr_fd.c ft_putstr_fd.c ft_strchr.c \
 		ft_split.c ft_space_split.c ft_free.c \
