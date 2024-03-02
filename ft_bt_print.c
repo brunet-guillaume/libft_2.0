@@ -6,7 +6,7 @@
 /*   By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/02 21:27:11 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/03/02 21:29:19 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/03/02 21:44:55 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -49,6 +49,8 @@ void	ft_bt_print(t_btree *root, void (*print)(void *))
 		return ;
 	ft_bzero(&paddings, sizeof(int) * 1024);
 	ft_printf("Binary tree %p\n", root);
+	(*print)(root->data);
+	ft_printf("\n");
 	if (root->right)
 		paddings[depth] = 1;
 	ft_bt_print_child(root->left, paddings, depth + 1, print);
