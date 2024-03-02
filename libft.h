@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/02/29 10:35:27 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/03/02 13:09:05 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,6 +57,13 @@ typedef struct s_dlist
 	struct s_dlist	*prev;
 	struct s_dlist	*next;
 }	t_dlist;
+
+typedef struct s_btree
+{
+	void			*data;
+	struct s_btree	*left;
+	struct s_btree	*right;
+}	t_btree;
 
 int		is_flag(char c);
 int		is_type(char c);
@@ -118,8 +125,10 @@ void	ft_lstiter(t_list *lst, void (*f)(void *));
 void	ft_dl_add_back(t_dlist **lst, t_dlist *new);
 void	ft_dl_add_front(t_dlist **lst, t_dlist *new);
 void	ft_dl_del(t_dlist *lst, void (*del)(void *));
+void	ft_bt_del(t_btree *root, void (*del)(void *));
 void	ft_lstdelone(t_list *lst, void (*del)(void *));
 void	ft_lstclear(t_list **lst, void (*del)(void *));
+void	ft_bt_clear(t_btree	*root, void (*del)(void *));
 void	ft_dl_clear(t_dlist **lst, void (*del)(void *));
 void	*ft_memcpy(void *dest, const void *src, size_t n);
 void	*ft_memmove(void *dest, const void *src, size_t n);
@@ -166,6 +175,10 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *));
 t_dlist	*ft_dl_new(void *data);
 t_dlist	*ft_dl_last(t_dlist *lst);
 t_dlist	*ft_dl_remove_from(t_dlist **lst, t_dlist *elem, void (*del)(void *));
+
+t_btree	*ft_bt_new(void *data);
+t_btree	*ft_bt_add_left(t_btree *root, void *data);
+t_btree	*ft_bt_add_right(t_btree *root, void *data);
 
 t_clr	rgba_from_int(int clr);
 t_clr	rgba(int r, int g, int b, int a);
