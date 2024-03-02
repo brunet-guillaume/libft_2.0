@@ -6,7 +6,7 @@
 #    By: gbrunet <guill@umebrunet.fr>               +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/01/20 10:00:18 by gbrunet           #+#    #+#              #
-#    Updated: 2024/03/02 13:07:37 by gbrunet          ###   ########.fr        #
+#    Updated: 2024/03/02 21:27:53 by gbrunet          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,7 @@ SOURCES = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c ft_isalpha.c \
 		ft_dl_add_back.c ft_dl_del.c ft_dl_clear.c ft_dl_new.c ft_dl_last.c \
 		ft_dl_size.c ft_dl_sort.c ft_dl_swap.c ft_dl_remove_from.c \
 		mathi_func.c ft_rgba.c ft_bt_new.c ft_bt_clear.c ft_bt_del.c \
-		ft_bt_add_left.c ft_bt_add_right.c
+		ft_bt_add_left.c ft_bt_add_right.c ft_bt_print.c
 
 ALLSRCS = $(SOURCES) $(BONUS)
 

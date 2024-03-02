@@ -6,7 +6,7 @@
 /*   By: gbrunet <gbrunet@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/11/06 13:57:08 by gbrunet           #+#    #+#             */
-/*   Updated: 2024/03/02 13:09:05 by gbrunet          ###   ########.fr       */
+/*   Updated: 2024/03/02 21:28:26 by gbrunet          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -131,6 +131,7 @@ void	ft_lstclear(t_list **lst, void (*del)(void *));
 void	ft_bt_clear(t_btree	*root, void (*del)(void *));
 void	ft_dl_clear(t_dlist **lst, void (*del)(void *));
 void	*ft_memcpy(void *dest, const void *src, size_t n);
+void	ft_bt_print(t_btree *root, void (*print)(void *));
 void	*ft_memmove(void *dest, const void *src, size_t n);
 void	ft_striteri(char *s, void (*f)(unsigned int, char*));
 void	ft_dl_sort(t_dlist *list, int (*sort_cmp)(void *, void *));
