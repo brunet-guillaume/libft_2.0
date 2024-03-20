@@ -1,6 +1,6 @@
 # Libft 2.0 (42 school)
 
-This is an improived version of the [Libft](https://gitlab.com/uotiug42/libft/) project of 42 school.
+This is an improved version of the [Libft](https://gitlab.com/uotiug42/libft/) project of 42 school.
 
 It is advisable to improve our Libft, project after project. So, here is the functions I added to the initial library :
 
