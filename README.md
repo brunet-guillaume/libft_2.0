@@ -9,7 +9,7 @@ It is advisable to improve our Libft, project after project. So, here is the fun
 ```c
 typedef struct s_btree
 {
-	void			*data;
+	void		*data;
 	struct s_btree	*left;
 	struct s_btree	*right;
 }	t_btree;
@@ -25,7 +25,7 @@ typedef struct s_btree
 ```c
 typedef struct s_dlist
 {
-	void			*data;
+	void		*data;
 	struct s_dlist	*prev;
 	struct s_dlist	*next;
 }	t_dlist;
