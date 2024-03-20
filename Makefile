@@ -88,7 +88,7 @@ $(OBJ_DIR)%.o : $(SRC_DIR)%.c
 	@$(CC) -c $(CFLAGS) $< -o $@
 
 $(NAME) : $(OBJ_FILES)
-	@make info | grep -v directory
+	@make info --no-print-directory
 	@ar rc $(NAME) $(OBJ_FILES)
 	@echo "$(_GREEN)Libft created.$(_END)"
 	@printf "\e[?25h"
@@ -108,8 +108,8 @@ fclean :
 	@echo "$(_GREEN)$(NAME) deleted.$(_END)"
 
 re : 
-	@make fclean | grep -v directory
-	@make all | grep -v directory
+	@make fclean --no-print-directory
+	@make all --no-print-directory
 	@printf "\e[?25h"
 
 info :
