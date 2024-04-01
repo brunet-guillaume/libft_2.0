@@ -1,6 +1,6 @@
 # Libft 2.0 (42 school)
 
-This is an improved version of the [Libft](https://gitlab.com/uotiug42/libft/) project of 42 school.
+This is an improved version of the [Libft](https://gitlab.com/uotiug42/unix/libft/) project of 42 school.
 
 It is advisable to improve our Libft, project after project. So, here is the functions I added to the initial library :
 
@@ -40,11 +40,11 @@ typedef struct s_dlist
 
 ## Get next line
 
-[get_next_line](https://gitlab.com/uotiug42/get_next_line) project (42 school) added to this library.
+[get_next_line](https://gitlab.com/uotiug42/unix/get_next_line) project (42 school) added to this library.
 
 ## Printf
 
-[ft_printf](https://gitlab.com/uotiug42/ft_printf) project (42 school) added to this library.
+[ft_printf](https://gitlab.com/uotiug42/unix/ft_printf) project (42 school) added to this library.
 
 ## Others
 
@@ -56,7 +56,7 @@ typedef struct s_dlist
 
 ### Compilation
 ```bash
-git clone https://gitlab.com/uotiug42/libft_2.0.git
+git clone https://gitlab.com/uotiug42/unix/libft_2.0.git
 cd libft_2.0
 make
 ```
